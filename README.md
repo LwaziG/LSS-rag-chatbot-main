@@ -33,35 +33,11 @@ A RAG-based AI chatbot system focused on Lean Six Sigma methodology, providing e
 - **Vitest**: Frontend testing framework
 - **ESLint & Black**: Code formatting and linting
 
-## Project Structure
+|                    Home Page                    |                  Add Documents                  |                Login                 |               Register               |
+|:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
+| <img src="homepage.png" width="250px"/> | <img src="addDocuments.png" width="250px"/> | <img src="login.png" width="250px"/> | <img src="register.png" width="250px"/> |
 
-```
-.
-├── backend/
-│   └── app/
-│       ├── api/        # API routes
-│       ├── core/       # Core functionality
-│       ├── db/         # Database models and config
-│       ├── models/     # Pydantic models
-│       ├── schemas/    # Schema definitions
-│       ├── services/   # Business logic
-│       └── utils/      # Utility functions
-│       └── gradio_ui.py # Gradio UI implementation
-├── frontend/
-│   └── src/
-│       ├── components/ # Reusable React components
-│       ├── hooks/      # Custom React hooks
-│       ├── pages/      # Page components
-│       ├── services/   # API services
-│       ├── store/      # State management
-│       ├── types/      # TypeScript types
-│       └── utils/      # Utility functions
-└── knowledge_base/     # LSS content
-    ├── methodologies/
-    ├── tools/
-    ├── case_studies/
-    └── templates/
-```
+
 
 ## Available Interfaces
 
@@ -77,15 +53,6 @@ The project provides two user interfaces:
      - Chat history
      - User profile management
      - Subscription handling
-
-2. **Gradio UI (Development/Testing Interface)**
-   - URL: http://localhost:8000/chatbot
-   - Features:
-     - Direct RAG service integration
-     - Quick testing interface
-     - No authentication required
-     - Simplified chat experience
-     - Useful for development and debugging
 
 ## Setup Instructions
 
@@ -152,96 +119,4 @@ The application will be available at:
 - API Documentation: http://localhost:8000/docs
 - Health Check: http://localhost:8000/health
 
-## Current Status
-
-### RAG Implementation
-✅ Core RAG service with LangChain integration
-✅ Weaviate vector store setup
-✅ Document chunking and embedding pipeline
-✅ Robust error handling with fallback mechanisms
-✅ Automatic retries for API operations
-✅ Fallback to direct LLM when Weaviate is unavailable
-✅ Configurable timeouts and connection settings
-✅ Comprehensive logging system
-
-### User Interface
-✅ Dual UI approach with React and Gradio
-✅ React frontend with Material-UI components
-✅ Gradio UI for development and testing
-✅ Responsive design for both interfaces
-✅ Cross-origin request handling
-✅ Real-time chat interaction
-✅ Source document display
-
-### Authentication & Security
-✅ JWT-based authentication
-✅ User registration and login
-✅ Query limit tracking
-✅ Subscription management
-✅ API key security
-✅ Error handling and validation
-
-### Database & Storage
-✅ PostgreSQL integration
-✅ Weaviate vector store
-✅ Migration system
-✅ Connection pooling
-✅ Error recovery
-
-### Development Tools
-✅ Comprehensive logging
-✅ Testing infrastructure
-✅ Development server configuration
-✅ Code formatting and linting
-✅ API documentation
-
-## Known Issues
-
-- **Weaviate Connection**: 
-  ✅ Fixed: Added robust error handling and retries
-  ✅ Fixed: Implemented fallback to direct LLM
-  ✅ Fixed: Configurable timeouts
-  - Note: May need proper configuration in production
-
-- **Frontend Integration**:
-  ✅ Fixed: CORS configuration
-  ✅ Fixed: Authentication flow
-  ✅ Fixed: Real-time updates
-  - Note: Consider WebSocket for streaming responses
-
-## Next Steps
-
-1. **RAG Improvements**
-   - Implement streaming responses
-   - Add more LSS content
-   - Enhance context retrieval
-   - Optimize embedding process
-
-2. **UI Enhancements**
-   - Add chat message streaming
-   - Improve source document display
-   - Add visualization tools
-   - Enhance mobile responsiveness
-
-3. **Infrastructure**
-   - Set up CI/CD pipeline
-   - Add monitoring and analytics
-   - Implement caching
-   - Optimize performance
-
-4. **Documentation**
-   - Add API usage examples
-   - Improve setup guides
-   - Add troubleshooting section
-   - Document best practices
-
-## Contributing
-
-1. Create a new branch for your feature
-2. Write tests for new functionality
-3. Ensure all tests pass
-4. Submit a pull request
-
-## License
-
-[License Type] - see LICENSE file for details 
+Developed By Lwazi Gumede
